@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: telegram-relay-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8085492027:AAHctHoLD6bjZEJGlyssoz0AeY3hvSnb9U4
+      - key: ADMIN_CHAT_ID
+        value: 7578557713
